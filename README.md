@@ -16,18 +16,18 @@
 
 # API ENDPOINT================================================
 
-| Method        | Endpoint           | Description                |
-| ------------- |:------------------:| --------------------------:|
-| POST          | /register          | User register              |
-| POST          | /login             | User login (get token jwt) |
-| GET           | /me                | User info login            |
-| POST          | /posttype          | Create post type           |
-| GET           | /posttype          | Read All post type         |
-| GET           | /posttype/(:num)   | Read by Id post type       |
-| PUT           | /posttype/(:num)   | Update by Id post type     |
-| DELETE        | /posttype/(:num)   | Delete by Id post type     |
-| POST          | /postingan         | Create postingan           |
-| GET           | /postingan         | Read All postingan         |
-| GET           | /postingan/(:num)  | Read by Id postingan       |
-| PUT           | /postingan/(:num)  | Update by Id postingan     |
-| DELETE        | /postingan/(:num)  | Delete by Id postingan     |
+| Method        | Endpoint           | Description                | Authorization              |
+| ------------- |:------------------:| --------------------------:| --------------------------:|
+| POST          | /register          | User register              |                            |
+| POST          | /login             | User login (get token jwt) |                            |
+| GET           | /me                | User info login            | Bearer Token               |
+| POST          | /posttype          | Create post type           | Bearer Token               |
+| GET           | /posttype          | Read All post type         | Bearer Token               |
+| GET           | /posttype/(:num)   | Read by Id post type       | Bearer Token               |
+| PUT           | /posttype/(:num)   | Update by Id post type     | Bearer Token               |
+| DELETE        | /posttype/(:num)   | Delete by Id post type     | Bearer Token               |
+| POST          | /postingan         | Create postingan           | Bearer Token               |
+| GET           | /postingan         | Read All postingan         | Bearer Token               |
+| GET           | /postingan/(:num)  | Read by Id postingan       | Bearer Token               |
+| PUT           | /postingan/(:num)  | Update by Id postingan     | Bearer Token               |
+| DELETE        | /postingan/(:num)  | Delete by Id postingan     | Bearer Token               |
